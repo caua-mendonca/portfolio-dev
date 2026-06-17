@@ -11,8 +11,8 @@ const contacts = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "cauã-mendonça",
-    href: "https://linkedin.com/in/cauã-mendonça",
+    value: "linkedin.com/in/cauamendonca",
+    href: "https://linkedin.com/in/cauamendonca",
   },
   {
     icon: MessageCircle,

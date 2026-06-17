@@ -5,19 +5,28 @@ const experiences = [
     role: "Desenvolvedor Júnior Full-Stack",
     company: "Cia do Crédito",
     period: "Jun 2025 – Presente",
-    location: "Campos dos Goytacazes, RJ",
-    description:
-      "Desenvolvimento e manutenção da PWA Ciacred com Angular, criação de dashboards responsivos com integração via APIs REST. Manutenção da API Symfony e criação de automações RPA com Node.js e Playwright.",
-    tags: ["Angular", "Symfony", "Node.js", "Playwright", "REST APIs"],
+    location: "Remoto",
+    highlights: [
+      "Liderança técnica do setor de RPA financeiro com 18+ automações ativas em produção",
+      "100% dos processos de importação e integração de dados do setor financeiro automatizados",
+      "Desenvolvimento de dashboard estratégico centralizando dados de múltiplos sistemas",
+      "Manutenção e evolução da PWA Ciacred com Angular, dashboards responsivos integrados via APIs REST",
+      "Manutenção da API Symfony com correção de endpoints e integridade das respostas",
+    ],
+    tags: ["Angular", "React.js", "Node.js", "Playwright", "Python", "Symfony", "PWA", "Docker"],
   },
   {
     role: "Estagiário Full-Stack",
     company: "Cia do Crédito",
     period: "Ago 2024 – Jun 2025",
-    location: "Rio de Janeiro, RJ",
-    description:
-      "Atuação no desenvolvimento front-end da PWA com Angular e manutenção de endpoints da API em Symfony. Desenvolvimento de soluções de automação (RPA) para extração de relatórios.",
-    tags: ["Angular", "Symfony", "Docker", "RPA"],
+    location: "Remoto",
+    highlights: [
+      "Início no desenvolvimento da PWA Ciacred com Angular e TypeScript",
+      "Primeiras contribuições em automações RPA, evoluindo para liderança técnica do setor financeiro",
+      "Implementação de componentes reutilizáveis e integração com APIs RESTful",
+      "Participação em sprints, code reviews e ambiente ágil com Git Flow",
+    ],
+    tags: ["Angular", "TypeScript", "Symfony", "RPA", "Git Flow", "Scrum"],
   },
 ];
 
@@ -68,9 +77,14 @@ const ExperienceSection = () => (
                   <p className="text-xs text-muted-foreground mb-4">
                     {exp.location}
                   </p>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                    {exp.description}
-                  </p>
+                  <ul className="mb-4 space-y-1.5">
+                    {exp.highlights.map((h, j) => (
+                      <li key={j} className="text-muted-foreground text-sm leading-relaxed flex gap-2">
+                        <span className="text-primary mt-1.5 shrink-0">›</span>
+                        {h}
+                      </li>
+                    ))}
+                  </ul>
                   <div className="flex flex-wrap gap-2">
                     {exp.tags.map((tag) => (
                       <span

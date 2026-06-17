@@ -1,8 +1,13 @@
 import AnimatedSection from "./AnimatedSection";
 
 const techs = [
-  "React", "Next.js", "Node.js", "Express", "JavaScript",
-  "TypeScript", "HTML", "CSS", "Git", "GitHub",
+  // Front-End
+  "Angular", "React.js", "Next.js", "TypeScript", "JavaScript",
+  "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Redux",
+  // Back-End / RPA
+  "Node.js", "Express.js", "Symfony", "Playwright", "Python",
+  // DevOps / Banco
+  "Docker", "Git", "MongoDB", "PWA", "AWS",
 ];
 
 const AboutSection = () => (
@@ -15,9 +20,14 @@ const AboutSection = () => (
       <div className="grid md:grid-cols-2 gap-12 items-start">
         <AnimatedSection delay={0.1}>
           <p className="text-muted-foreground leading-relaxed text-lg">
-            Sou um desenvolvedor Fullstack apaixonado por construir experiências
-            web modernas. Atuo em todo o stack — desde interfaces React/Next.js
-            limpas até APIs REST escaláveis com Node.js e Express.
+            Desenvolvedor Full-Stack com foco em Front-End e liderança técnica
+            no setor de automações RPA financeiras. Na Cia do Crédito, sou
+            responsável integral pelo desenvolvimento, validação e
+            disponibilização de mais de 18 automações ativas em produção com
+            Node.js, Playwright e Python — automatizando 100% dos processos de
+            importação e integração de dados do setor financeiro. Atuo também
+            no desenvolvimento de PWAs com Angular e React.js e na manutenção
+            de APIs com Symfony.
           </p>
         </AnimatedSection>
 

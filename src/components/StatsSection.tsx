@@ -2,9 +2,9 @@ import AnimatedCounter from "./AnimatedCounter";
 
 const stats = [
   { end: 2, suffix: "+", label: "Anos de Experiência" },
-  { end: 5, suffix: "+", label: "Projetos Realizados" },
-  { end: 10, suffix: "+", label: "Tecnologias Dominadas" },
-  { end: 3, suffix: "", label: "Certificações" },
+  { end: 18, suffix: "+", label: "RPAs em Produção" },
+  { end: 20, suffix: "+", label: "Tecnologias Dominadas" },
+  { end: 10, suffix: "+", label: "Certificações e Cursos" },
 ];
 
 const StatsSection = () => (

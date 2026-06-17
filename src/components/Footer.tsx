@@ -9,6 +9,7 @@ const Footer = () => (
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-foreground transition-colors"
+        aria-label="Perfil do GitHub de Cauã Mendonça Martello"
       >
         <Github size={18} />
       </a>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const words = ["React", "Next.js", "Node.js", "TypeScript", "Express"];
+const words = ["React", "Angular", "Node.js", "Playwright", "TypeScript", "Python"];
 
 const TypewriterText = () => {
   const [wordIndex, setWordIndex] = useState(0);
