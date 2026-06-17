@@ -3,16 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cauã Mendonça Martello | Desenvolvedor Fullstack</title>
-    <meta name="description" content="Portfólio de Cauã Mendonça Martello — Desenvolvedor Fullstack especializado em React, Next.js e Node.js" />
+    <title>Cauã Mendonça Martello — Desenvolvedor Fullstack React &amp; Node.js</title>
+    <meta name="description" content="Portfólio de Cauã Mendonça Martello — Desenvolvedor Fullstack que constrói aplicações web com React, Next.js e Node.js. Veja projetos, experiência e entre em contato." />
     <meta name="author" content="Cauã Mendonça Martello" />
+    <meta name="robots" content="index, follow" />
 
-    <meta property="og:title" content="Cauã Mendonça Martello | Desenvolvedor Fullstack" />
-    <meta property="og:description" content="Portfólio de Cauã Mendonça Martello — Desenvolvedor Fullstack" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Cauã Mendonça Martello — Desenvolvedor Fullstack" />
+    <meta property="og:description" content="Desenvolvedor Fullstack especializado em React, Next.js e Node.js. Construindo interfaces modernas e APIs escaláveis." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://caua-martello.dev" />
+    <meta property="og:image" content="https://caua-martello.dev/og-image.png" />
+    <meta property="og:locale" content="pt_BR" />
 
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cauã Mendonça Martello — Desenvolvedor Fullstack" />
+    <meta name="twitter:description" content="Desenvolvedor Fullstack especializado em React, Next.js e Node.js." />
+    <meta name="twitter:image" content="https://caua-martello.dev/og-image.png" />
+
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Tema inicial sem flash: lê preferência salva antes do React montar -->
+    <script>
+      (function () {
+        var t = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (t === "light") {
+          document.documentElement.classList.add("light");
+        } else {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
   </head>
 
   <body>
